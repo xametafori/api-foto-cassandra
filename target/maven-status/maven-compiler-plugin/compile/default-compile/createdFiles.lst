@@ -1,0 +1,7 @@
+com\ms\practica2\controller\PersonaController.class
+com\ms\practica2\model\Persona.class
+com\ms\practica2\ApiFotoCassandraApplication.class
+com\ms\practica2\repository\PersonaRepository.class
+com\ms\practica2\config\DbConfigAutoStart.class
+com\ms\practica2\service\PersonaService.class
+com\ms\practica2\service\PersonaServiceImpl.class

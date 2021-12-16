@@ -1,0 +1,17 @@
+CREATE KEYSPACE IF NOT EXISTS personadatabase WITH replication = {'class':'SimpleStrategy', 'replication_factor':1};
+
+USE personadatabase;
+CREATE TABLE IF NOT EXISTS personadatabase.Persona (
+       dni              text,
+       nombres          text,
+       apellidos        text,
+       estado           int,
+       fotobase64       blob,
+       primary key(dni)
+);
+
+INSERT INTO personadatabase.Persona(dni,nombres,apellidos,estado,fotobase64) VALUES ('73987433','xavier','ambrocio ramirez',1,textAsblob('YXNsa2RramFzZAo='));
+
+SELECT * from personadatabase.Persona;
+
+DROP TABLE personadatabase.Persona;

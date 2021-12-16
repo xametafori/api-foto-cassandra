@@ -1,0 +1,43 @@
+
+//**Creando network
+
+docker network create javapractica2
+
+//**Descargar base datos cassandra:
+
+docker pull cassandra:4.0
+
+
+//**Creando base de datos:
+
+docker run --name bscassandra --network javapractica2 -d cassandra:4.0
+
+
+//**Abrimos cmd del docker -> cqlsh bscassandra y ejecutamos lo siguiente
+
+
+CREATE KEYSPACE IF NOT EXISTS personadatabase WITH replication = {'class':'SimpleStrategy', 'replication_factor':1};
+
+USE personadatabase;
+CREATE TABLE IF NOT EXISTS personadatabase.Persona (
+       dni              text,
+       nombres          text,
+       apellidos        text,
+       estado           int,
+       fotobase64       blob,
+       primary key(dni)
+);
+
+INSERT INTO personadatabase.Persona(dni,nombres,apellidos,estado,fotobase64) VALUES ('73987433','xavier','ambrocio ramirez',1,textAsblob('YXNsa2RramFzZAo='));
+
+SELECT * from personadatabase.Persona;
+
+DROP TABLE personadatabase.Persona;
+
+//**********Aplicacion ******************
+
+.\mvnw clean package -DskipTests 
+
+docker build -t apirest-cassandra:v1 .
+
+docker run -p 8090:8090 --name api-foto-cassandra --network javapractica2 api-foto-cassandra:v1
