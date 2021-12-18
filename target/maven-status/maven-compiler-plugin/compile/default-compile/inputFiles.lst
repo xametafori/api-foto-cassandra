@@ -1,7 +1,7 @@
-D:\curso_java\practica2\api-foto-cassandra\src\main\java\com\ms\practica2\ApiFotoCassandraApplication.java
-D:\curso_java\practica2\api-foto-cassandra\src\main\java\com\ms\practica2\model\Persona.java
-D:\curso_java\practica2\api-foto-cassandra\src\main\java\com\ms\practica2\controller\PersonaController.java
-D:\curso_java\practica2\api-foto-cassandra\src\main\java\com\ms\practica2\service\PersonaService.java
-D:\curso_java\practica2\api-foto-cassandra\src\main\java\com\ms\practica2\config\DbConfigAutoStart.java
-D:\curso_java\practica2\api-foto-cassandra\src\main\java\com\ms\practica2\service\PersonaServiceImpl.java
-D:\curso_java\practica2\api-foto-cassandra\src\main\java\com\ms\practica2\repository\PersonaRepository.java
+D:\curso_java\Practica 2\api-foto-cassandra\src\main\java\com\ms\practica2\service\PersonaServiceImpl.java
+D:\curso_java\Practica 2\api-foto-cassandra\src\main\java\com\ms\practica2\config\DbConfigAutoStart.java
+D:\curso_java\Practica 2\api-foto-cassandra\src\main\java\com\ms\practica2\repository\PersonaRepository.java
+D:\curso_java\Practica 2\api-foto-cassandra\src\main\java\com\ms\practica2\ApiFotoCassandraApplication.java
+D:\curso_java\Practica 2\api-foto-cassandra\src\main\java\com\ms\practica2\controller\PersonaController.java
+D:\curso_java\Practica 2\api-foto-cassandra\src\main\java\com\ms\practica2\model\Persona.java
+D:\curso_java\Practica 2\api-foto-cassandra\src\main\java\com\ms\practica2\service\PersonaService.java

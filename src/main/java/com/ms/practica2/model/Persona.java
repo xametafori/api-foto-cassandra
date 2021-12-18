@@ -7,8 +7,10 @@ import lombok.Setter;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
-import javax.persistence.Lob;
+import java.nio.ByteBuffer;
 import java.sql.Blob;
+
+import javax.persistence.Lob;
 
 @AllArgsConstructor
 @Getter
@@ -19,8 +21,8 @@ public class Persona {
 	@PrimaryKey
 	private @NonNull String dni;
 	private @NonNull String nombres;
-	private @NonNull Integer apellidos;
+	private @NonNull String apellidos;
 	private @NonNull Integer estado;
-	@Lob()
-	private Blob fotobase64;
+
+	private ByteBuffer fotobase64;
 }

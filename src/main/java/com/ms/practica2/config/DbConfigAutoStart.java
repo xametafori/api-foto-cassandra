@@ -17,6 +17,7 @@ import org.springframework.data.cassandra.core.mapping.CassandraMappingContext;
 @Configuration
 public class DbConfigAutoStart extends AbstractCassandraConfiguration {
 
+
     @Bean
     public CassandraClusterFactoryBean cluster() {
 
