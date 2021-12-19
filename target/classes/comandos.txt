@@ -40,4 +40,4 @@ DROP TABLE personadatabase.Persona;
 
 docker build -t api-foto-cassandra:v1 .
 
-docker run -p 8090:8090 --name api-foto-cassandra --network javapractica2 api-foto-cassandra:v1
+docker run -p 8091:8091 --name api-foto-cassandra --network javapractica2 api-foto-cassandra:v1
